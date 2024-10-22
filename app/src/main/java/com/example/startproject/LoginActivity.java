@@ -1,5 +1,6 @@
 package com.example.startproject;
 
+        import android.util.Patterns;
         import android.content.Intent;
         import android.os.Bundle;
         import android.text.TextUtils;
@@ -36,19 +37,20 @@ public class LoginActivity extends AppCompatActivity {
                 String email = etLoginEmail.getText().toString().trim();
                 String password = etLoginPassword.getText().toString();
 
-                if (TextUtils.isEmpty(email)) {
-                    etLoginEmail.setError("Email is required");
+                // Email validation (must end with gmail.com)
+                if (TextUtils.isEmpty(email) || !Patterns.EMAIL_ADDRESS.matcher(email).matches() || !email.endsWith("@gmail.com")) {
+                    etLoginEmail.setError("Valid email ending with @gmail.com is required");
                     return;
                 }
-                if (TextUtils.isEmpty(password)) {
-                    etLoginPassword.setError("Password is required");
+                // Password validation (length and complexity checks)
+                if (TextUtils.isEmpty(password) || password.length() < 8 || password.length() > 15) {
+                    etLoginPassword.setError("Password must be between 8 and 15 characters");
                     return;
                 }
 
-                // Perform login logic here (e.g., API call or database interaction)
+                // Perform login logic here
                 Toast.makeText(LoginActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
-
-                // Navigate to the home screen after successful login
+                // Navigate to home screen after successful login
                 // startActivity(new Intent(LoginActivity.this, HomeActivity.class));
                 // finish();
             }

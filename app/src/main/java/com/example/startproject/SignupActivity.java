@@ -1,5 +1,6 @@
 package com.example.startproject;
 
+        import android.util.Patterns;
         import android.content.Intent;
         import android.os.Bundle;
         import android.text.TextUtils;
@@ -45,29 +46,41 @@ public class SignupActivity extends AppCompatActivity {
                     etFullName.setError("Full name is required");
                     return;
                 }
-                if (TextUtils.isEmpty(email)) {
-                    etEmail.setError("Email is required");
+                // Full name validation
+                if (TextUtils.isEmpty(fullName)) {
+                    etFullName.setError("Full name is required");
                     return;
                 }
-                if (TextUtils.isEmpty(phone)) {
-                    etPhone.setError("Phone number is required");
+                // Email validation (must end with gmail.com)
+                if (TextUtils.isEmpty(email) || !Patterns.EMAIL_ADDRESS.matcher(email).matches() || !email.endsWith("@gmail.com")) {
+                    etEmail.setError("Valid email ending with @gmail.com is required");
                     return;
                 }
-                if (TextUtils.isEmpty(password)) {
-                    etPassword.setError("Password is required");
+                // Phone validation (length check for at least 11 digits)
+                if (TextUtils.isEmpty(phone) || phone.length() < 11) {
+                    etPhone.setError("Valid phone number with at least 11 digits is required");
                     return;
                 }
+                // Password validation (length and complexity checks)
+                if (TextUtils.isEmpty(password) || password.length() < 8 || password.length() > 15) {
+                    etPassword.setError("Password must be between 8 and 15 characters");
+                    return;
+                }
+                // Confirm password validation
                 if (!password.equals(confirmPassword)) {
                     etConfirmPassword.setError("Passwords do not match");
                     return;
                 }
+                // Password complexity check (at least one uppercase letter, one lowercase letter, one digit, and one special character)
+                if (!password.matches("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,15}$")) {
+                    etPassword.setError("Password must contain at least one uppercase letter, one lowercase letter, one digit, and one special character");
+                    return;
+                }
 
-                // Perform sign-up logic here (e.g., API call or database interaction)
+                // Perform sign-up logic here
                 Toast.makeText(SignupActivity.this, "Sign Up Successful", Toast.LENGTH_SHORT).show();
-
-                // Navigate to LoginActivity after successful signup
                 startActivity(new Intent(SignupActivity.this, LoginActivity.class));
-                finish(); // Prevents going back to SignupActivity
+                finish();
             }
         });
 

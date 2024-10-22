@@ -1,5 +1,6 @@
 package com.example.startproject;
 
+        import android.util.Patterns;
         import android.os.Bundle;
         import android.text.TextUtils;
         import android.view.View;
@@ -26,15 +27,14 @@ public class ForgotPasswordActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String email = etEmail.getText().toString().trim();
 
-                if (TextUtils.isEmpty(email)) {
-                    etEmail.setError("Email is required");
+                // Email validation (must end with gmail.com)
+                if (TextUtils.isEmpty(email) || !Patterns.EMAIL_ADDRESS.matcher(email).matches() || !email.endsWith("@gmail.com")) {
+                    etEmail.setError("Valid email ending with @gmail.com is required");
                     return;
                 }
 
-                // Add your logic for handling password reset here
-                // Example: send a password reset email using Firebase or an API call
+                // Logic for handling password reset
                 Toast.makeText(ForgotPasswordActivity.this, "Password reset link sent to " + email, Toast.LENGTH_SHORT).show();
-
                 // Optionally, navigate back to the login screen after submitting
                 finish();
             }
