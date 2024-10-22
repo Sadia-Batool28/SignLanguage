@@ -61,7 +61,6 @@ public class SignupActivity extends AppCompatActivity {
                     etPhone.setError("Valid phone number with at least 11 digits is required");
                     return;
                 }
-                // Password validation (length and complexity checks)
                 if (TextUtils.isEmpty(password) || password.length() < 8 || password.length() > 15) {
                     etPassword.setError("Password must be between 8 and 15 characters");
                     return;
@@ -71,9 +70,9 @@ public class SignupActivity extends AppCompatActivity {
                     etConfirmPassword.setError("Passwords do not match");
                     return;
                 }
-                // Password complexity check (at least one uppercase letter, one lowercase letter, one digit, and one special character)
-                if (!password.matches("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,15}$")) {
-                    etPassword.setError("Password must contain at least one uppercase letter, one lowercase letter, one digit, and one special character");
+                // Password complexity check (at least one letter, one digit, and one special character)
+                if (!password.matches("^(?=.*[a-zA-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,15}$")) {
+                    etPassword.setError("Password must contain at least one letter, one digit, and one special character");
                     return;
                 }
 

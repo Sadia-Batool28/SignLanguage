@@ -47,6 +47,12 @@ public class LoginActivity extends AppCompatActivity {
                     etLoginPassword.setError("Password must be between 8 and 15 characters");
                     return;
                 }
+                // Password complexity check
+                if (!password.matches("^(?=.*[a-zA-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,15}$")) {
+                    etLoginPassword.setError("Password must contain at least one letter, one digit, and one special character");
+                    return;
+                }
+
 
                 // Perform login logic here
                 Toast.makeText(LoginActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
