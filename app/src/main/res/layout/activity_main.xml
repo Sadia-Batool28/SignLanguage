@@ -1,0 +1,142 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@color/Green">
+
+        <TextView
+            android:id="@+id/greeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:text="Welcome to Signlator"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Let's Communicate without any barrier."
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:paddingBottom="16dp" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner_background"
+            android:padding="10dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/asl_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/b0821756f7a2be66ef088bde46084e4a"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/asl_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ASL Alphabets"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:paddingTop="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner_background"
+            android:padding="10dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/hand_icon"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/df28206b9f0a7c27a13d29e4fe912af4"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/camera_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign Language To Text"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:paddingTop="8dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/coming_soon_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Let's Explore Something New!"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/f472833483464f046a612c0a8e61eb43"
+            android:scaleType="centerCrop" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:background="@color/medium_sea_green"
+            android:paddingTop="13dp"
+            android:paddingBottom="13dp">
+
+            <ImageView
+                android:id="@+id/home_icon"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/s3"
+                android:padding="8dp" />
+
+            <ImageView
+                android:id="@+id/bc_icon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/home"
+                android:padding="8dp"
+                android:layout_marginStart="32dp" />
+
+            <ImageView
+                android:id="@+id/camera_icon"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/c2"
+                android:padding="8dp"
+                android:layout_marginStart="32dp" />
+
+            <ImageView
+                android:id="@+id/profile_icon"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/man"
+                android:padding="8dp"
+                android:layout_marginStart="32dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
