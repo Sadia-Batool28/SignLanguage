@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/Green">
+    android:background="@color/Blue">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -12,7 +12,6 @@
         android:textColor="@color/white"
         android:layout_gravity="center"
         android:padding="16dp" />
-    <!-- Scrollable Content -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -24,7 +23,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!-- ASL Header Section -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -36,7 +34,7 @@
                 <ImageView
                     android:id="@+id/asl_image"
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
+                    android:layout_height="250dp"
                     android:src="@drawable/b0821756f7a2be66ef088bde46084e4a"
                     android:scaleType="centerCrop"/>
 
@@ -51,7 +49,6 @@
                     android:padding="8dp"/>
             </LinearLayout>
 
-            <!-- ASL Alphabets Grid with Three Alphabets per Row -->
             <GridLayout
                 android:id="@+id/asl_alphabet_grid"
                 android:layout_width="match_parent"
@@ -61,7 +58,7 @@
                 android:layout_margin="30dp"
                 android:layout_gravity="center">
 
-                <!-- Row 1: A -->
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -73,7 +70,7 @@
                     <ImageView
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:src="@drawable/letter_A"/> <!-- Replace with your image -->
+                        android:src="@drawable/a"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -82,7 +79,7 @@
                         android:textSize="18sp"/>
                 </LinearLayout>
 
-                <!-- Row 1: B -->
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -94,7 +91,7 @@
                     <ImageView
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:src="@drawable/letter_B"/> <!-- Replace with your image -->
+                        android:src="@drawable/b"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -103,7 +100,6 @@
                         android:textSize="18sp"/>
                 </LinearLayout>
 
-                <!-- Row 1: C -->
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -115,7 +111,7 @@
                     <ImageView
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:src="@drawable/letter_C"/> <!-- Replace with your image -->
+                        android:src="@drawable/c"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -134,7 +130,7 @@
                     <ImageView
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:src="@drawable/letter_D"/> <!-- Replace with your image -->
+                        android:src="@drawable/d"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -153,7 +149,7 @@
                     <ImageView
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:src="@drawable/letter_E"/> <!-- Replace with your image -->
+                        android:src="@drawable/e"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -172,7 +168,7 @@
                     <ImageView
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:src="@drawable/letter_F"/> <!-- Replace with your image -->
+                        android:src="@drawable/f"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -191,7 +187,7 @@
                     <ImageView
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:src="@drawable/letter_G"/> <!-- Replace with your image -->
+                        android:src="@drawable/g"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -210,7 +206,7 @@
                     <ImageView
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:src="@drawable/letter_H"/> <!-- Replace with your image -->
+                        android:src="@drawable/h"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -229,7 +225,7 @@
                     <ImageView
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:src="@drawable/letter_I"/> <!-- Replace with your image -->
+                        android:src="@drawable/i"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -248,7 +244,7 @@
                     <ImageView
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:src="@drawable/letter_J"/> <!-- Replace with your image -->
+                        android:src="@drawable/j"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -267,7 +263,7 @@
                     <ImageView
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:src="@drawable/letter_K"/> <!-- Replace with your image -->
+                        android:src="@drawable/k"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -286,7 +282,7 @@
                     <ImageView
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:src="@drawable/letter_L"/> <!-- Replace with your image -->
+                        android:src="@drawable/l"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -305,7 +301,7 @@
                     <ImageView
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:src="@drawable/letter_M"/> <!-- Replace with your image -->
+                        android:src="@drawable/m"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -324,7 +320,7 @@
                     <ImageView
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:src="@drawable/letter_N"/> <!-- Replace with your image -->
+                        android:src="@drawable/n"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -343,7 +339,7 @@
                     <ImageView
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:src="@drawable/letter_O"/> <!-- Replace with your image -->
+                        android:src="@drawable/o"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -362,7 +358,7 @@
                     <ImageView
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:src="@drawable/letter_P"/> <!-- Replace with your image -->
+                        android:src="@drawable/p"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -381,7 +377,7 @@
                     <ImageView
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:src="@drawable/letter_Q"/> <!-- Replace with your image -->
+                        android:src="@drawable/q"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -400,7 +396,7 @@
                     <ImageView
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:src="@drawable/letter_R"/> <!-- Replace with your image -->
+                        android:src="@drawable/r"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -419,7 +415,7 @@
                     <ImageView
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:src="@drawable/letter_S"/> <!-- Replace with your image -->
+                        android:src="@drawable/s"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -438,7 +434,7 @@
                     <ImageView
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:src="@drawable/letter_T"/> <!-- Replace with your image -->
+                        android:src="@drawable/t"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -457,7 +453,7 @@
                     <ImageView
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:src="@drawable/letter_U"/> <!-- Replace with your image -->
+                        android:src="@drawable/u"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -476,7 +472,7 @@
                     <ImageView
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:src="@drawable/letter_V"/> <!-- Replace with your image -->
+                        android:src="@drawable/v"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -495,7 +491,7 @@
                     <ImageView
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:src="@drawable/letter_W"/> <!-- Replace with your image -->
+                        android:src="@drawable/w"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -514,7 +510,7 @@
                     <ImageView
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:src="@drawable/letter_X"/> <!-- Replace with your image -->
+                        android:src="@drawable/x"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -533,7 +529,7 @@
                     <ImageView
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:src="@drawable/letter_Y"/> <!-- Replace with your image -->
+                        android:src="@drawable/y"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -552,7 +548,7 @@
                     <ImageView
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:src="@drawable/letter_Z"/> <!-- Replace with your image -->
+                        android:src="@drawable/z"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -560,20 +556,19 @@
                         android:textColor="@color/white"
                         android:textSize="18sp"/>
                 </LinearLayout>
-                <!-- Add additional rows for other alphabets (D, E, etc.) following the same structure -->
 
             </GridLayout>
         </LinearLayout>
     </ScrollView>
 
-    <!-- Bottom Navigation Section -->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginTop="32dp"
         android:gravity="center"
-        android:background="@color/medium_sea_green"
+        android:background="@color/white"
         android:paddingTop="13dp"
         android:paddingBottom="13dp">
 

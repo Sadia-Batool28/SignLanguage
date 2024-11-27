@@ -1,13 +1,10 @@
 package com.example.signlator;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.example.signlator.MainActivity2;
-import com.example.signlator.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,15 +13,55 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Find the hand icon ImageView
+        // Find views
+        ImageView aslImage = findViewById(R.id.asl_image);
+        ImageView homeIcon = findViewById(R.id.home_icon);
         ImageView handIcon = findViewById(R.id.hand_icon);
+        ImageView cameraIcon = findViewById(R.id.camera_icon); // Camera icon to go to MainActivity3
+        ImageView alphabetIcon = findViewById(R.id.bc_icon);
 
-        // Set an OnClickListener for the hand icon
+        // Click listener for the "real time camera" image
+        aslImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MainActivity3.class);
+                startActivity(intent);
+            }
+        });
+
+        // Click listener for the "ASL Alphabets" image
         handIcon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Create an Intent to start the SecondActivity
                 Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                startActivity(intent);
+            }
+        });
+
+        homeIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        // Click listener for the camera icon (real-time camera)
+        cameraIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Navigate to MainActivity3 for real-time camera
+                Intent intent = new Intent(MainActivity.this, MainActivity3.class); // This redirects to MainActivity3
+                startActivity(intent);
+            }
+        });
+
+        // Click listener for the "ASL Alphabets" image
+        alphabetIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Navigate to MainActivity3 for real-time camera
+                Intent intent = new Intent(MainActivity.this, MainActivity2.class); // This redirects to MainActivity3
                 startActivity(intent);
             }
         });

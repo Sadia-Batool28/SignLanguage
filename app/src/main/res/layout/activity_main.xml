@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="16dp"
-        android:background="@color/Green">
+        android:background="@color/Blue">
 
         <TextView
             android:id="@+id/greeting"
@@ -19,7 +19,6 @@
             android:text="Welcome to Signlator"
             android:textColor="@color/white"
             android:textSize="40sp" />
-
         <TextView
             android:id="@+id/subtitle"
             android:layout_width="wrap_content"
@@ -47,7 +46,7 @@
                 android:id="@+id/asl_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="ASL Alphabets"
+                android:text="Real Time Camera"
                 android:textSize="18sp"
                 android:layout_gravity="center"
                 android:textColor="@color/white"
@@ -74,7 +73,7 @@
                 android:id="@+id/camera_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sign Language To Text"
+                android:text="ASL Alphabets"
                 android:textSize="18sp"
                 android:layout_gravity="center"
                 android:textColor="@color/white"
@@ -95,15 +94,16 @@
             android:id="@+id/main"
             android:layout_width="match_parent"
             android:layout_height="250dp"
-            android:src="@drawable/f472833483464f046a612c0a8e61eb43"
+            android:src="@drawable/signimage"
             android:scaleType="centerCrop" />
         <LinearLayout
+            android:id="@+id/bottom_navigation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginTop="32dp"
+            android:layout_alignParentBottom="true"
             android:gravity="center"
-            android:background="@color/medium_sea_green"
+            android:background="@color/white"
             android:paddingTop="13dp"
             android:paddingBottom="13dp">
 
