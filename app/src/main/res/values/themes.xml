@@ -1,9 +1,17 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
+<<<<<<< HEAD
     <style name="Base.Theme.Signlator" parent="Theme.Material3.DayNight.NoActionBar">
+=======
+    <style name="Base.Theme.Startproject" parent="Theme.Material3.DayNight.NoActionBar">
+>>>>>>> 1255c55ae8016ef4eca0adddbc5b4eb4b005d5ac
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
+<<<<<<< HEAD
     <style name="Theme.Signlator" parent="Base.Theme.Signlator" />
+=======
+    <style name="Theme.Startproject" parent="Base.Theme.Startproject" />
+>>>>>>> 1255c55ae8016ef4eca0adddbc5b4eb4b005d5ac
 </resources>

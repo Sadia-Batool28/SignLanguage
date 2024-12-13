@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.signlator"> <!-- Add the package name here -->
 
     <!-- Add Camera permissions -->
     <uses-permission android:name="android.permission.CAMERA"/>
     <uses-feature android:name="android.hardware.camera.any" android:required="true"/>
+=======
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+>>>>>>> 1255c55ae8016ef4eca0adddbc5b4eb4b005d5ac
 
     <application
         android:allowBackup="true"
@@ -15,6 +22,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+<<<<<<< HEAD
         android:theme="@style/Theme.Signlator">
         <activity
             android:name=".MainActivity"
@@ -29,3 +37,24 @@
     </application>
 
 </manifest>
+=======
+        android:theme="@style/Theme.Startproject"
+        tools:targetApi="31">
+        <activity
+            android:name=".SignupActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".LoginActivity" />
+
+        <activity android:name=".ForgotPasswordActivity" />
+
+    </application>
+
+</manifest>
+>>>>>>> 1255c55ae8016ef4eca0adddbc5b4eb4b005d5ac
