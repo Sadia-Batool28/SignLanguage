@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
-<<<<<<< HEAD
     <color name="white">#FFFFFF</color>
     <color name="light_green">#90EE90</color>
     <color name="pale_green">#98FB98</color>
@@ -10,7 +9,5 @@
     <color name="Green">#004D40</color>
     <color name="Blue">#052042</color>
     <color name="light_Blue"> #0000FF</color>
-=======
-    <color name="white">#FFFFFFFF</color>
 >>>>>>> 1255c55ae8016ef4eca0adddbc5b4eb4b005d5ac
 </resources>

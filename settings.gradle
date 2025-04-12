@@ -1,16 +1,11 @@
 pluginManagement {
     repositories {
-        google {
-            content {
-                includeGroupByRegex("com\\.android.*")
-                includeGroupByRegex("com\\.google.*")
-                includeGroupByRegex("androidx.*")
-            }
-        }
+        google()
         mavenCentral()
         gradlePluginPortal()
     }
 }
+
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
@@ -19,7 +14,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "SignLanguage"  // Use a neutral project name
-include ':app'        // Main module
-include ':startproject'  // Teammate's module
-include ':signlator'     // Your module (note name consistency)
+rootProject.name = "Signlator"  // Root project name matching your team's convention
+
+// Main application module
+include ':app'
