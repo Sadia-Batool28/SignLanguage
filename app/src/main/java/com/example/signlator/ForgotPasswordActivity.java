@@ -1,4 +1,4 @@
-package com.example.startproject;
+package com.example.signlator;
 
         import android.util.Patterns;
         import android.os.Bundle;

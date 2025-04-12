@@ -1,4 +1,4 @@
-package com.example.startproject;
+package com.example.signlator;
 
         import android.util.Patterns;
         import android.content.Intent;
@@ -89,6 +89,14 @@ public class SignupActivity extends AppCompatActivity {
                 // Navigate to LoginActivity when "Already have an account? Log in" is clicked
                 startActivity(new Intent(SignupActivity.this, LoginActivity.class));
                 finish(); // Optional: finish SignupActivity to prevent going back to it
+            }
+        });
+        btnSignUp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Navigate to MainActivity
+                startActivity(new Intent(SignupActivity.this, MainActivity.class));
+                finish(); // Optional: finish LoginActivity to prevent going back to it
             }
         });
     }

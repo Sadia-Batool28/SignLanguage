@@ -1,4 +1,5 @@
-package com.example.startproject;
+package com.example.signlator;
+
 
         import android.util.Patterns;
         import android.content.Intent;
@@ -75,6 +76,14 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // Navigate to SignupActivity
                 startActivity(new Intent(LoginActivity.this, SignupActivity.class));
+                finish(); // Optional: finish LoginActivity to prevent going back to it
+            }
+        });
+        btnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Navigate to MainActivity
+                startActivity(new Intent(LoginActivity.this, MainActivity.class));
                 finish(); // Optional: finish LoginActivity to prevent going back to it
             }
         });
