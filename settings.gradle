@@ -19,5 +19,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Signlator"
-include ':app'
+rootProject.name = "SignLanguage"  // Use a neutral project name
+include ':app'        // Main module
+include ':startproject'  // Teammate's module
+include ':signlator'     // Your module (note name consistency)
